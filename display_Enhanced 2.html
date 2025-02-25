@@ -140,7 +140,7 @@
                 document.getElementById("productName").innerText = deviceInfo["Product"] || "Device Information";
 
                 // Set the correct device image
-                var deviceType = (deviceInfo["Model"] || "").toLowerCase();
+                var deviceType = (deviceInfo["DeviceType"] || "").toLowerCase();
                 var imagePath = "default.png"; // Default image
                 if (deviceType.includes("printer")) imagePath = "printer.png";
                 else if (deviceType.includes("laptop")) imagePath = "laptop.png";
