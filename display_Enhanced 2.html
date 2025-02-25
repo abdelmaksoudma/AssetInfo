@@ -168,7 +168,7 @@
                 // Set the correct device image
                 var deviceType = (deviceInfo["DeviceType"] || "").toLowerCase();
                 var imagePath = "default.png"; // Default image
-                if (deviceType.includes("printer")) imagePath = "printer.png";
+                if (deviceType.includes("printer")) imagePath = "printer2.png";
                 else if (deviceType.includes("laptop")) imagePath = "laptop.png";
                 else if (deviceType.includes("desktop")) imagePath = "desktop.png";
                 document.getElementById("deviceImage").src = imagePath;
