@@ -85,7 +85,7 @@
 
     <div class="container">
         <img id="deviceImage" class="device-image" src="default.png" alt="Device Image">
-        <h2 id="deviceType">Device Information</h2>
+        <h2 id="Product">Device Information</h2>
         
         <div class="info">
             <p><span class="label">Hostname:</span> <span class="value" id="hostname">N/A</span></p>
@@ -137,7 +137,7 @@
                 document.getElementById("status").innerText = deviceInfo["Status"] || "N/A";
                 document.getElementById("installationDate").innerText = deviceInfo["InstallationDate"] || "N/A";
                 document.getElementById("manufacturer").innerText = deviceInfo["Manufacturer"] || "N/A";
-                document.getElementById("deviceType").innerText = deviceInfo["DeviceType"] || "Device Information";
+                document.getElementById("Product").innerText = deviceInfo["Product"] || "Device Information";
 
                 // Set the correct device image
                 var deviceType = (deviceInfo["DeviceType"] || "").toLowerCase();
