@@ -24,6 +24,23 @@
             border-radius: 12px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
+            position: relative;
+        }
+        
+        .logo {
+            position: absolute;
+            top: 10px;
+            width: 50px;
+            height: auto;
+            width: 85px;
+        }
+        
+        .logo.left {
+            left: 10px;
+        }
+        
+        .logo.right {
+            right: 10px;
         }
         
         .device-image {
@@ -34,7 +51,7 @@
         }
         
         h2 {
-            color: #007bff;
+            color: #45A097;
             margin-bottom: 15px;
             font-size: 22px;
         }
@@ -84,7 +101,16 @@
 <body>
 
     <div class="container">
+        <!-- Left Logo -->
+        <img class="logo left" src="LeftLogo.jpg" alt="Left Icon">
+        
+        <!-- Right Logo -->
+        <img class="logo right" src="RightLogo.jpg" alt="Right Logo">
+        
+        <!-- Device Image -->
         <img id="deviceImage" class="device-image" src="default.png" alt="Device Image">
+        
+        <!-- Device Information -->
         <h2 id="Product">Device Information</h2>
         
         <div class="info">
